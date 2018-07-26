@@ -1,0 +1,13 @@
+/* doc
+---
+title: Z-Index
+name: z-index
+category: Base
+---
+
+Z-Index elements order
+
+*/
+:root {
+  --z-index-header: 10000;
+}
