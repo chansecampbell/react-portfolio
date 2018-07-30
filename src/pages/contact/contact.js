@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './contact.css';
 
 import Header from '../../components/header';
 
-class PageContact extends Component {
+class PageContact extends React.Component {
   render() {
     return (
       <div className="contact">

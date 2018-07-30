@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './projects.css';
 
 import Header from '../../components/header';
 
-class PageProjects extends Component {
+class PageProjects extends React.Component {
   render() {
     return (
       <div className="projects">

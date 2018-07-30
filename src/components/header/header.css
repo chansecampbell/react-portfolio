@@ -1,21 +1,39 @@
+@import '../../assets/css/styles.css';
+
 .header {
-    background-color: #222;
-    height: auto;
-    margin-bottom: 20px;
-    min-height: 150px;
-    padding: 20px;
-    color: white;
+  align-items: center;
+  background-color: var(--color-jacksons-purple);
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  height: 70px;
+  /* padding: 20px; */
+  position: relative;
   
   &__logo {
     animation: home-logo-spin infinite 20s linear;
-    height: 80px;
+    height: 40px;
   }
 
   &__nav {
-    margin-top: 20px;
+    position: absolute;
+    display: none;
+
+    &--open {
+      display: block;
+      height: 100vh;
+      top: 0;
+      background-color: var(--color-cornflower-blue);
+      width: 100%;
+    }
+
+    @media (--tablet-landscape) {
+      display: block;
+      right: 20px;
+    }
 
     a {
-      color: #FFF;
+      color: var(--color-white);
       padding: 0 10px;
       text-decoration: none;
     }

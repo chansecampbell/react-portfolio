@@ -1,7 +1,9 @@
+@import '../../assets/css/styles.css';
+
 .home {
   text-align: center;
   
-  &-intro {
+  &__intro {
     font-size: 18px;
   }
 }
