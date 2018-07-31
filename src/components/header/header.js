@@ -1,26 +1,28 @@
-import React from 'react';
-import { Link } from "react-router-dom";
+import React from "react";
 
-import './header.css';
+import Nav from '../nav';
 
-import logo from '../../assets/images/logo.svg';
+import "./header.css";
+import logo from "../../assets/images/logo.svg";
 
 const Header = (props) => {
+  this.hamburger = (
+    <div className={"header__hamburger " + props.mobileHamburger} onClick={props.toggleMobileMenu}>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  );
+  this.nav = props.links.length > 0 ? <Nav {...props} /> : '';
+  this.hamburgerMenu = props.links.length > 0 ? this.hamburger : '';
+
   return (
     <header className="header">
       <img src={logo} className="header__logo" alt="logo" />
-      <div className={"header__hamburger " + props.mobileHamburger} onClick={props.toggleMobileMenu}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav className={"header__nav " + props.mobileNav}>
-        <Link to="/">Home</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/projects">Projects</Link>
-      </nav>
+      { this.hamburgerMenu }
+      { this.nav } 
     </header>
   );
-}
+};
 
 export default Header;

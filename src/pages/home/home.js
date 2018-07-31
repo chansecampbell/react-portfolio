@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import './home.css';
+import "./home.css";
 
 class PageHome extends React.Component {
   render() {

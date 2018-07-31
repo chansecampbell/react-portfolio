@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import './projects.css';
+import "./projects.css";
 
 class PageProjects extends React.Component {
   render() {

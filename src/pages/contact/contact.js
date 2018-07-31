@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import './contact.css';
+import "./contact.css";
 
 class PageContact extends React.Component {
   render() {

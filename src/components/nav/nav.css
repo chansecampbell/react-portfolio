@@ -1,0 +1,37 @@
+@import "../../assets/css/_breakpoints.css";
+
+.nav {
+  position: absolute;
+  display: none;
+
+  &--open {
+    @media (--to-tablet-landscape) {
+      align-items: center;
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+      top: 0;
+      background-color: var(--color-jacksons-purple);
+      width: 100%;
+      z-index: var(--z-index-header-mobile-nav);
+    }
+  }
+
+  @media (--tablet-landscape) {
+    display: block;
+    right: 20px;
+  }
+
+  a {
+    color: var(--color-white);
+    font: normal normal bold 1.8rem/2.6rem var(--font-montserrat);
+    padding: 20px 0;
+    text-decoration: none;
+
+    @media (--tablet-landscape) {
+      font-size: 1.2rem;
+      padding: 0 10px;
+    }
+  }
+}
