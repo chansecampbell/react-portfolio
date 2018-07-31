@@ -1,13 +1,11 @@
 import React from 'react';
-import './projects.css';
 
-import Header from '../../components/header';
+import './projects.css';
 
 class PageProjects extends React.Component {
   render() {
     return (
       <div className="projects">
-        <Header />
         <p className="projects-intro">
           You're now on the projects page!
         </p>

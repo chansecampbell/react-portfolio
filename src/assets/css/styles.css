@@ -3,7 +3,9 @@
 
 /* General */
 @import "_mixins.css";
+@import "_fonts.css";
 @import "_colors.css";
 @import "_breakpoints.css";
 @import "_common.css";
 @import "_z-index.css";
+

@@ -1,5 +1,3 @@
-@import '../../assets/css/styles.css';
-
 .header {
   align-items: center;
   background-color: var(--color-jacksons-purple);
@@ -7,7 +5,6 @@
   flex-direction: row;
   margin-bottom: 20px;
   height: 70px;
-  /* padding: 20px; */
   position: relative;
   
   &__logo {
@@ -15,16 +12,68 @@
     height: 40px;
   }
 
+  &__hamburger {
+    position: absolute;
+    right: 20px;
+    z-index: var(--z-index-header-mobile-hamburger);
+
+    @media (--tablet-landscape) {
+      display: none;
+    }
+
+    span {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      background: var(--color-white);
+      border-radius: 3px; 
+      z-index: 1;
+      transform-origin: 4px 0px;
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+
+      &:first-child {
+        transform-origin: 0% 0%;
+      }
+
+      &:last-child {
+        transform-origin: 0% 100%;
+      }
+    }
+
+    &--open {
+      span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -2px);
+
+        &:nth-child(2) {
+          opacity: 0;
+          transform: rotate(0deg) scale(0.2, 0.2);
+        }
+
+        &:last-child {
+          transform: rotate(-45deg) translate(0, 0);
+        }
+      }
+    }
+  }
+
   &__nav {
     position: absolute;
     display: none;
 
     &--open {
-      display: block;
+      align-items: center;
+      display: flex;
       height: 100vh;
+      flex-direction: column;
+      justify-content: center;
       top: 0;
-      background-color: var(--color-cornflower-blue);
+      background-color: var(--color-jacksons-purple);
       width: 100%;
+      z-index: var(--z-index-header-mobile-nav);
     }
 
     @media (--tablet-landscape) {
@@ -34,8 +83,14 @@
 
     a {
       color: var(--color-white);
-      padding: 0 10px;
+      font: normal normal bold 1.8rem/2.6rem var(--font-montserrat);
+      padding: 20px 0;
       text-decoration: none;
+
+      @media (--tablet-landscape) {
+        font-size: 1.2rem;
+        padding: 0 10px;
+      }
     }
   }
 }
