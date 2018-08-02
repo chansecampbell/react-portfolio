@@ -179,7 +179,6 @@ module.exports = {
                     require('postcss-em-media-query'),
                     require('postcss-custom-media'),
                     require('postcss-flexbugs-fixes'),
-                    require('postcss-preset-env'),
                     require('postcss-nested'),
                     autoprefixer({
                       browsers: [

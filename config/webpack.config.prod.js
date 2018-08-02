@@ -193,12 +193,12 @@ module.exports = {
                         modules: true,
                         ident: 'postcss',
                         plugins: () => [
-                          require('postcss-nested'),
                           require('postcss-import'),
                           require('postcss-mixins'),
                           require('postcss-em-media-query'),
                           require('postcss-custom-media'),
                           require('postcss-flexbugs-fixes'),
+                          require('postcss-nested'),
                           autoprefixer({
                             browsers: [
                               '>1%',

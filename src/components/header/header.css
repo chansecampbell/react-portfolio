@@ -16,6 +16,7 @@
     position: absolute;
     right: 20px;
     z-index: var(--z-index-header-mobile-hamburger);
+    cursor: pointer;
 
     @media (--tablet-landscape) {
       display: none;
