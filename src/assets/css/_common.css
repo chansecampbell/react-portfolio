@@ -47,6 +47,14 @@ body {
   font-family: sans-serif;
 }
 
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: inherit;
+  }
+}
+
 /**
  * For Screenreaders
  */
