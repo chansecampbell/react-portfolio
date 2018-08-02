@@ -9,3 +9,8 @@
 @import "_common.css";
 @import "_z-index.css";
 
+@import '../../components/header/header.css';
+@import '../../components/nav/nav.css';
+@import '../../pages/home/home.css';
+@import '../../pages/contact/contact.css';
+@import '../../pages/projects/projects.css';

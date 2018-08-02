@@ -190,8 +190,14 @@ module.exports = {
                       options: {
                         // Necessary for external CSS imports to work
                         // https://github.com/facebookincubator/create-react-app/issues/2677
+                        modules: true,
                         ident: 'postcss',
                         plugins: () => [
+                          require('postcss-nested'),
+                          require('postcss-import'),
+                          require('postcss-mixins'),
+                          require('postcss-em-media-query'),
+                          require('postcss-custom-media'),
                           require('postcss-flexbugs-fixes'),
                           autoprefixer({
                             browsers: [

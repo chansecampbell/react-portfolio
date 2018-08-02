@@ -1,7 +1,5 @@
 import React from "react";
 
-import "./contact.css";
-
 class PageContact extends React.Component {
   render() {
     return (

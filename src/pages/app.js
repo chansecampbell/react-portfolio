@@ -1,8 +1,6 @@
 import React from "react";
 import { Route } from "react-router-dom"
 
-import "../assets/css/styles.css";
-
 import Header from "../components/header";
 import PageHome from "./home";
 import PageProjects from "./projects";

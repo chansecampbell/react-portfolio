@@ -1,7 +1,5 @@
 import React from "react";
 
-import "./home.css";
-
 class PageHome extends React.Component {
   render() {
     return (

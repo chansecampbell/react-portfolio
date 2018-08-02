@@ -1,8 +1,6 @@
 import React from "react";
 
 import Nav from '../nav';
-
-import "./header.css";
 import logo from "../../assets/images/logo.svg";
 
 const Header = (props) => {

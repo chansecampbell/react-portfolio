@@ -1,7 +1,5 @@
 import React from "react";
 
-import "./projects.css";
-
 class PageProjects extends React.Component {
   render() {
     return (
