@@ -4,8 +4,14 @@ import { Link } from "react-router-dom";
 const Button = (props) => {
   this.color = () => {
     switch(props.color) {
-      case 'purple':
-      return 'button--purple';
+      case 'blue':
+      return 'button--blue';
+      case 'blue2':
+      return 'button--blue2';
+      case 'white':
+      return 'button--white';
+      case 'white2':
+      return 'button--white2';
       default:
       return 'button--white';
     }

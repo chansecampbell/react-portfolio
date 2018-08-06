@@ -10,11 +10,12 @@ class PageHome extends React.Component {
         <div className="home__intro">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
+        <div className="home__diagonal"></div>
         <div className="home__image">
           <img src={headshot} alt="Placeholder" />
         </div>
         <div className="home__cta">
-          <Button url="/projects" text="View projects" color="purple" />
+          <Button url="/projects" text="View projects" color="blue" />
         </div>
       </div>
     );

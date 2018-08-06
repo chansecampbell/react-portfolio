@@ -1,7 +1,7 @@
 .nav {
   position: absolute;
   z-index: var(--z-index-header-mobile-nav);
-  background-color: var(--color-jacksons-purple);
+  background-color: var(--color-fiord);
 
     @media (--to-tablet-landscape) {
       align-items: center;

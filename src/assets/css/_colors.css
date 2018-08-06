@@ -11,10 +11,6 @@ Color Palette for the WBSTL redesign
 :root {
   --color-white: #fff;
   --color-black: #000;
-  --color-nero: #2d2d2d;
-  --color-alto: #e0e0e0;
-  --color-navy: #005789;
-  --color-jacksons-purple: #1A237E;
-  --color-cornflower-blue: #6195ED;
   --color-aqua: #28defe;
+  --color-fiord: #414868;
 }

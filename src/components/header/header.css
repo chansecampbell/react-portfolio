@@ -1,9 +1,8 @@
 .header {
   align-items: center;
-  background-color: var(--color-jacksons-purple);
+  background-color: var(--color-fiord);
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
   height: 70px;
   position: relative;
   
