@@ -1,12 +1,50 @@
 import React from "react";
 
+import Image from "../../components/image";
+import placeholder300x300 from "../../assets/images/placeholder-300x300.png";
+import placeholder768x300 from "../../assets/images/placeholder-768x300.png";
+import placeholder1024x200 from "../../assets/images/placeholder-1024x200.png";
+
 class PageProjects extends React.Component {
   render() {
     return (
       <div className="projects">
-        <p className="projects-intro">
-          You're now on the projects page!
-        </p>
+        <div className="projects__intro">
+          <h1>Lorem ipsum</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div className="projects__grid">
+          <Image 
+            mobile={placeholder768x300}
+            tablet={placeholder1024x200}
+            desktop={placeholder300x300}
+            alt="Placeholder" />
+          <Image 
+            mobile={placeholder768x300}
+            tablet={placeholder1024x200}
+            desktop={placeholder300x300}
+            alt="Placeholder" />
+          <Image 
+            mobile={placeholder768x300}
+            tablet={placeholder1024x200}
+            desktop={placeholder300x300}
+            alt="Placeholder" />
+          <Image 
+            mobile={placeholder768x300}
+            tablet={placeholder1024x200}
+            desktop={placeholder300x300}
+            alt="Placeholder" />
+          <Image 
+            mobile={placeholder768x300}
+            tablet={placeholder1024x200}
+            desktop={placeholder300x300}
+            alt="Placeholder" />
+          <Image 
+            mobile={placeholder768x300}
+            tablet={placeholder1024x200}
+            desktop={placeholder300x300}
+            alt="Placeholder" />
+        </div>
       </div>
     );
   }

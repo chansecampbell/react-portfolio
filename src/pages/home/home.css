@@ -1,12 +1,11 @@
-@import "../../assets/css/_breakpoints.css";
-
 .home {
   text-align: center;
   overflow: hidden;
   
   &__intro {
     background-color: var(--color-fiord);
-    padding: 20px 20px 80px;
+    padding: 20px;
+    margin-bottom: 20px;
 
     p {
       font: normal normal normal 2.2rem/3rem var(--font-montserrat);
@@ -14,13 +13,6 @@
       max-width: 475px;
       margin: 0 auto;
     }
-  }
-
-  &__diagonal {
-    width: 104%;
-    background-color: var(--color-white);
-    height: 100px;
-    transform: translateY(-65px) translateX(-4px) rotate(-4deg);
   }
 
   &__image {
