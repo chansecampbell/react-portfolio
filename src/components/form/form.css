@@ -1,0 +1,44 @@
+.form {
+  height: auto;
+
+  &__wrapper {
+    padding: 20px;
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  &__label {
+    display: block;
+    font: normal normal normal 1.4rem/2.2rem var(--font-montserrat);
+    color: var(--color-white);
+    margin-bottom: 5px;
+  }
+
+  &__input {
+    display: block;
+    font: normal normal normal 1.2rem/2rem var(--font-montserrat);
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 0 5px;
+  }
+
+  &__textarea {
+    font: normal normal normal 1.2rem/2rem var(--font-montserrat);
+    min-height: 150px;
+    padding: 5px;
+  }
+
+  &__submit {
+    background: none;
+    font: normal normal bold 1.2rem/2rem var(--font-montserrat);
+    letter-spacing: .2rem;
+    margin: 20px 0;
+  }
+}

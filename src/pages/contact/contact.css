@@ -1,7 +1,51 @@
 .contact {
   text-align: center;
-  
-  &-intro {
-    font-size: 18px;
+
+  &__intro {
+    padding: 40px 20px 20px;
+
+    p {
+      font: normal normal normal 1.4rem/2.2rem var(--font-montserrat);
+      color: var(--color-fiord);
+      max-width: 475px;
+      margin: 0 auto;
+    }
+  }
+
+  &__section {
+    position: relative;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__diagonal {
+    background-color: var(--color-fiord);
+    height: 95px;
+    width: 102%;
+    position: absolute;
+    transform: translateY(0) translateX(-1px) rotate(-3.5deg);
+    top: 25px;
+
+    @media (--tablet-portrait) {
+      top: 35px;
+    }
+
+    @media (--tablet-landscape) {
+      top: 50px;
+    }
+  }
+
+  &__form {
+    background: var(--color-fiord);
+    width: 100%;
+    height: auto;
+    margin-top: 90px;
+    padding-top: 20px;
+
+    @media (--tablet-landscape) {
+      margin-top: 100px;
+      padding-top: 30px;
+    }
   }
 }
