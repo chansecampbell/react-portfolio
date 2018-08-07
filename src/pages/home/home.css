@@ -1,0 +1,25 @@
+.home {
+  text-align: center;
+  overflow: hidden;
+  
+  &__intro {
+    background-color: var(--color-fiord);
+    padding: 20px;
+    margin-bottom: 20px;
+
+    p {
+      font: normal normal normal 2.2rem/3rem var(--font-montserrat);
+      color: var(--color-white);
+      max-width: 475px;
+      margin: 0 auto;
+    }
+  }
+
+  &__image {
+    margin-bottom: 20px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
