@@ -17,4 +17,33 @@
       margin: 0 auto;
     }
   }
+
+  &__grid {
+    display: flex;
+    flex-direction: column;
+
+    @media (--tablet-landscape) {
+      display: block;
+    }
+  }
+
+  &__image {
+    &--loading {
+      display: block;
+      height: 300px;
+      width: 100%;
+      background: red;
+
+      @media (--tablet-portrait) {
+        height: 200px;
+      }
+
+      @media (--tablet-landscape) {
+        display: inline-block;
+        margin: 0 10px 10px;
+        height: 300px;
+        width: 300px;
+      }
+    }
+  }
 }

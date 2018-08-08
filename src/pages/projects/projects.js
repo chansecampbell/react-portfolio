@@ -1,9 +1,17 @@
 import React from "react";
+import LoadableVisibility from "react-loadable-visibility/react-loadable";
 
 import Image from "../../components/image";
 import placeholder300x300 from "../../assets/images/placeholder-300x300.png";
 import placeholder768x300 from "../../assets/images/placeholder-768x300.png";
 import placeholder1024x200 from "../../assets/images/placeholder-1024x200.png";
+
+const LoadedImage = LoadableVisibility({
+  loader: () => import("../../components/image"),
+  loading: () => { 
+    return <div className="projects__image--loading"><h3>Loading...</h3></div>;
+  },
+});
 
 class PageProjects extends React.Component {
   render() {
@@ -14,32 +22,42 @@ class PageProjects extends React.Component {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div className="projects__grid">
-          <Image 
+          <Image
             mobile={placeholder768x300}
             tablet={placeholder1024x200}
             desktop={placeholder300x300}
             alt="Placeholder" />
-          <Image 
+          <Image
             mobile={placeholder768x300}
             tablet={placeholder1024x200}
             desktop={placeholder300x300}
             alt="Placeholder" />
-          <Image 
+          <Image
             mobile={placeholder768x300}
             tablet={placeholder1024x200}
             desktop={placeholder300x300}
             alt="Placeholder" />
-          <Image 
+          <LoadedImage
             mobile={placeholder768x300}
             tablet={placeholder1024x200}
             desktop={placeholder300x300}
             alt="Placeholder" />
-          <Image 
+          <LoadedImage
             mobile={placeholder768x300}
             tablet={placeholder1024x200}
             desktop={placeholder300x300}
             alt="Placeholder" />
-          <Image 
+          <LoadedImage 
+            mobile={placeholder768x300}
+            tablet={placeholder1024x200}
+            desktop={placeholder300x300}
+            alt="Placeholder" />
+          <LoadedImage
+            mobile={placeholder768x300}
+            tablet={placeholder1024x200}
+            desktop={placeholder300x300}
+            alt="Placeholder" />
+          <LoadedImage
             mobile={placeholder768x300}
             tablet={placeholder1024x200}
             desktop={placeholder300x300}
