@@ -8,8 +8,12 @@ import placeholder1024x200 from "../../assets/images/placeholder-1024x200.png";
 
 const LoadedImage = LoadableVisibility({
   loader: () => import("../../components/image"),
-  loading: () => { 
-    return <div className="projects__image--loading"><h3>Loading...</h3></div>;
+  loading: (error) => {
+    if (error) {
+      return 'Error!';
+    } else { 
+      return <div className="projects__image--loading"><h3>Loading...</h3></div>;
+    }
   },
 });
 
