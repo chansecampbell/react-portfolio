@@ -1,10 +1,31 @@
 import React from "react";
 import { Route } from "react-router-dom"
+import Loadable from 'react-loadable';
 
 import Header from "../components/header";
-import PageHome from "./home";
-import PageProjects from "./projects";
-import PageContact from "./contact";
+
+function loadingComponent({ error }) {
+  if (error) {
+    return 'Error!';
+  } else {
+    return <h3>Loading...</h3>;
+  }
+}
+
+const PageHome = Loadable({
+  loader: () => import("./home" /* webpackChunkName: "home" */),
+  loading: loadingComponent
+});
+
+const PageProjects = Loadable({
+  loader: () => import("./projects" /* webpackChunkName: "projects" */),
+  loading: loadingComponent
+});
+
+const PageContact = Loadable({
+  loader: () => import("./contact" /* webpackChunkName: "contact" */),
+  loading: loadingComponent
+});
 
 class App extends React.Component {
   constructor(props) {
